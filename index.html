@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en" data-theme="light"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>VapeTime Performance Bonus</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script>document.documentElement.dataset.theme=localStorage.getItem('theme')||'light'</script>
+</head><body>
+<section id="login"><div class="slides"><i style="background-image:url(assets/store.jpg)"></i><i style="background-image:url(assets/hero.jpg)"></i></div><div class="veil"></div>
+<form class="lg-card" id="lf"><img class="lg-logo" src="assets/logo.png" alt="Vape Time">
+<h2>Performance Bonus</h2><p class="mut">Sign in to open the leadership dashboard.</p>
+<label>Username<input id="u" autocomplete="username"></label>
+<label>Password<input id="p" type="password" autocomplete="current-password" placeholder="Enter password"></label>
+<div id="err" class="err"></div><button class="btn primary wide">Sign in</button>
+</form></section>
+<div id="app" hidden>
+<aside id="side"><div class="brand"><span class="mk"><img src="assets/logo.png" alt="Vape Time"></span><span class="lbl bn">Performance<br>Bonus</span><button id="collapse" title="Collapse menu">‹</button></div>
+<nav><small class="lbl">General</small>
+<a data-p="sales" class="on"><i>◔</i><span class="lbl">Targets &amp; Sales</span></a>
+<a data-p="bonus"><i>✦</i><span class="lbl">Bonus Payouts</span></a></nav>
+<div class="side-foot"><button id="logout"><i>⏻</i><span class="lbl">Sign out</span></button></div></aside>
+<main><header class="top"><h1 id="title"></h1><div class="grow"></div>
+<div class="search"><input id="gq" placeholder="Search stores or managers…"></div>
+<span class="mut" id="upd"></span><button class="btn ghost" id="ref" title="Refresh data">↻</button><button class="btn ghost" id="theme" title="Toggle theme">☾</button>
+<div class="user"><span class="av">A</span><div><b>Admin</b><small>Leadership</small></div></div></header>
+<div id="view"></div></main></div>
+<div id="modal" hidden><div class="mbox"><button class="x" id="mx">✕</button><div id="mb"></div></div></div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+<script src="js/app.js"></script>
+</body></html>
